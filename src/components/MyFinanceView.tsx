@@ -87,7 +87,7 @@ export function MyFinanceView({
               bktTopTab === 'overview' ? 'text-white font-black scale-105' : 'text-white/60 hover:text-white/80 font-semibold'
             }`}
           >
-            Overview
+            Resumen
           </button>
           <button 
             onClick={() => { setBktTopTab('transactions'); setSearchQuery(''); }}
@@ -95,7 +95,7 @@ export function MyFinanceView({
               bktTopTab === 'transactions' ? 'text-white font-black scale-105' : 'text-white/60 hover:text-white/80 font-semibold'
             }`}
           >
-            Transactions
+            Transacciones
           </button>
           <button 
             onClick={() => { setBktTopTab('budget'); setSearchQuery(''); }}
@@ -103,7 +103,7 @@ export function MyFinanceView({
               bktTopTab === 'budget' ? 'text-white font-black scale-105' : 'text-white/60 hover:text-white/80 font-semibold'
             }`}
           >
-            Budget
+            Presupuesto
           </button>
         </div>
 
@@ -153,7 +153,7 @@ export function MyFinanceView({
                     </div>
                     <div>
                       <h5 className="font-extrabold text-[11px] text-zinc-900 dark:text-zinc-100 leading-tight">Agnes Cela</h5>
-                      <p className="text-[8px] text-zinc-400 font-sans mt-0.5 leading-none">requests money</p>
+                      <p className="text-[8px] text-zinc-400 font-sans mt-0.5 leading-none">solicitó fondos</p>
                     </div>
                   </div>
                   <h4 className="font-mono text-sm font-black text-zinc-900 dark:text-white mt-1 leading-none">1,500.00 ALL</h4>
@@ -171,8 +171,8 @@ export function MyFinanceView({
                       </svg>
                     </div>
                     <div>
-                      <h5 className="font-extrabold text-[11px] text-zinc-900 dark:text-zinc-100 leading-tight">New traffic fine</h5>
-                      <p className="text-[8px] text-zinc-400 font-sans mt-0.5 leading-none">to pay for</p>
+                      <h5 className="font-extrabold text-[11px] text-zinc-900 dark:text-zinc-100 leading-tight">Nueva multa de tránsito</h5>
+                      <p className="text-[8px] text-zinc-400 font-sans mt-0.5 leading-none">por pagar</p>
                     </div>
                   </div>
                   <h4 className="font-mono text-sm font-black text-zinc-900 dark:text-white mt-1 leading-none">4,952.73 ALL</h4>
@@ -182,13 +182,13 @@ export function MyFinanceView({
               {/* Exact Mockup 5 aligned balances */}
               <div className="bg-transparent py-1 px-1 flex justify-between items-center select-none border-b border-zinc-200/40 pb-4">
                 <div className="text-left">
-                  <span className="text-[9px] text-zinc-450 dark:text-zinc-400 uppercase tracking-wider font-extrabold block">My balance</span>
+                  <span className="text-[9px] text-zinc-450 dark:text-zinc-400 uppercase tracking-wider font-extrabold block">Mi balance</span>
                   <h3 className="text-xl font-black text-zinc-900 dark:text-white leading-tight mt-1.5 font-mono">
                     175,160<span className="text-xs font-bold font-mono">.03</span> <span className="text-[10px] text-zinc-400 font-bold ml-0.5">ALL</span>
                   </h3>
                 </div>
                 <div className="text-left border-l border-zinc-250/50 dark:border-zinc-800 pl-5.5">
-                  <span className="text-[9px] text-[#FF2B54] uppercase tracking-wider font-extrabold block">Available balance</span>
+                  <span className="text-[9px] text-[#FF2B54] uppercase tracking-wider font-extrabold block">Balance disponible</span>
                   <h3 className="text-xl font-black text-[#FF2B54] leading-tight mt-1.5 font-mono">
                     375,160<span className="text-xs font-bold font-mono">.03</span> <span className="text-[10px] text-zinc-400 font-bold ml-0.5">ALL</span>
                   </h3>
@@ -197,11 +197,11 @@ export function MyFinanceView({
 
               {/* Accounts Sections containing elegant Silver Credit Card Representation */}
               <div className="space-y-3.5">
-                <h4 className="font-extrabold text-[11px] text-zinc-400 uppercase tracking-widest px-0.5">Accounts</h4>
+                <h4 className="font-extrabold text-[11px] text-zinc-400 uppercase tracking-widest px-0.5">Cuentas</h4>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {/* Account Card 1: Salary Account */}
-                  <div className="bg-white dark:bg-zinc-900 rounded-[26px] p-5.5 shadow-neomorph border border-white/60 dark:border-zinc-800/60 flex flex-col gap-4">
+                  <div className="bg-white dark:bg-zinc-900 rounded-[26px] p-5.5 shadow-neomorph-lift border border-white/60 dark:border-zinc-800/60 flex flex-col gap-4 cursor-pointer hover:scale-[1.02] active:scale-99" onClick={() => triggerToast("Detalles de tu Cuenta de nómina SUTI")}>
                     <div className="flex justify-between items-start">
                       <div className="flex items-center gap-3">
                         <div className="h-9 w-9 rounded-xl bg-[#FF2B54]/10 text-[#FF2B54] flex items-center justify-center border border-[#FF2B54]/20">
@@ -210,7 +210,7 @@ export function MyFinanceView({
                           </svg>
                         </div>
                         <div>
-                          <span className="text-[11.5px] font-extrabold text-zinc-850 dark:text-zinc-100">Salary account</span>
+                          <span className="text-[11.5px] font-extrabold text-zinc-850 dark:text-zinc-100">Cuenta de nómina</span>
                           <span className="text-[8px] text-zinc-400 block font-mono font-bold leading-none mt-0.5">SUTI-98842-active</span>
                         </div>
                       </div>
@@ -243,13 +243,13 @@ export function MyFinanceView({
                     </div>
 
                     <div className="text-left pt-1 flex justify-between border-t border-zinc-100 dark:border-zinc-800 mt-1">
-                      <span className="text-[9px] text-zinc-400 font-sans font-bold uppercase">Available overdraft</span>
+                      <span className="text-[9px] text-zinc-400 font-sans font-bold uppercase">Límite de apoyo</span>
                       <span className="text-[10px] font-mono text-zinc-500 font-extrabold">200,000.00 ALL</span>
                     </div>
                   </div>
 
                   {/* Account Card 2: Travel EUR Account */}
-                  <div className="bg-white dark:bg-zinc-900 rounded-[26px] p-5.5 shadow-neomorph border border-white/60 dark:border-zinc-800/60 flex flex-col justify-between h-[190px]">
+                  <div className="bg-white dark:bg-zinc-900 rounded-[26px] p-5.5 shadow-neomorph-lift border border-white/60 dark:border-zinc-800/60 flex flex-col justify-between h-[190px] cursor-pointer hover:scale-[1.02] active:scale-99" onClick={() => triggerToast("Detalles de tu Cuenta de viajes EUR SUTI")}>
                     <div className="flex items-center gap-3">
                       <div className="h-9.5 w-9.5 rounded-xl bg-[#FF2B54]/10 text-[#FF2B54] flex items-center justify-center border border-[#FF2B54]/20 flex-shrink-0">
                         <svg className="h-5.5 w-5.5 fill-current" viewBox="0 0 24 24">
@@ -257,7 +257,7 @@ export function MyFinanceView({
                         </svg>
                       </div>
                       <div>
-                        <span className="text-[11.5px] font-extrabold text-zinc-850 dark:text-zinc-100 block">Travel EUR account</span>
+                        <span className="text-[11.5px] font-extrabold text-zinc-850 dark:text-zinc-100 block">Cuenta de viajes EUR</span>
                         <span className="text-[8px] text-zinc-400 font-mono font-bold uppercase block leading-none mt-0.5">SITI-FACS-920</span>
                       </div>
                     </div>
@@ -281,7 +281,7 @@ export function MyFinanceView({
                   <div className="h-7 w-7 rounded-full bg-white dark:bg-zinc-900 flex items-center justify-center shadow-xs text-zinc-550 border border-zinc-200/50">
                     <span className="text-base font-black leading-none">+</span>
                   </div>
-                  <span className="text-[10.5px] text-zinc-500 font-extrabold uppercase tracking-widest">Add new saving plan</span>
+                  <span className="text-[10.5px] text-zinc-500 font-extrabold uppercase tracking-widest">Añadir plan de ahorro</span>
                 </button>
               </div>
 
@@ -360,7 +360,7 @@ export function MyFinanceView({
                   <Search className="h-4.5 w-4.5 text-zinc-400" />
                   <input 
                     type="text" 
-                    placeholder="Search transactions..." 
+                    placeholder="Buscar transacciones..." 
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className="flex-1 bg-transparent text-xs font-sans text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 outline-none border-none py-1"
@@ -379,7 +379,7 @@ export function MyFinanceView({
                 >
                   <div className="flex items-center gap-2">
                     <span className="h-2 w-2 rounded-full bg-amber-500 animate-pulse" />
-                    <span className="text-[11.5px] font-extrabold text-zinc-850 dark:text-zinc-150">Pending transactions (2)</span>
+                    <span className="text-[11.5px] font-extrabold text-zinc-850 dark:text-zinc-150">Transacciones pendientes (2)</span>
                   </div>
                   <div className="flex items-center gap-1.5">
                     <span className="font-mono text-xs font-black text-rose-500">1,857.28 ALL</span>
@@ -409,7 +409,7 @@ export function MyFinanceView({
 
               {/* Grouped lists */}
               <div className="space-y-4 pt-1">
-                <span className="text-[10px] font-extrabold text-zinc-400 uppercase tracking-widest px-0.5">Yesterday</span>
+                <span className="text-[10px] font-extrabold text-zinc-400 uppercase tracking-widest px-0.5">Ayer</span>
                 
                 <div className="space-y-3">
                   {/* Item 1: OSHEE Sh.a. (Utility payment) */}
@@ -450,7 +450,7 @@ export function MyFinanceView({
 
               {/* Grouped 2 */}
               <div className="space-y-4 pt-1">
-                <span className="text-[10px] font-extrabold text-zinc-400 uppercase tracking-widest px-0.5">20 May</span>
+                <span className="text-[10px] font-extrabold text-zinc-400 uppercase tracking-widest px-0.5">20 de Mayo</span>
                 
                 <div className="bg-white dark:bg-zinc-900 rounded-[22px] p-3.5 border border-white/50 dark:border-zinc-850 shadow-neomorph-light flex justify-between items-center">
                   <div className="flex items-center gap-3">
@@ -482,10 +482,10 @@ export function MyFinanceView({
             >
               {/* Month tabs select bar */}
               <div className="flex justify-around items-center bg-white dark:bg-zinc-900 border border-white/60 dark:border-zinc-850 rounded-full px-2 py-1.5 shadow-neomorph-light select-none">
-                <span className="text-[9.5px] text-zinc-400 font-bold cursor-pointer hover:text-zinc-650" onClick={() => triggerToast("March historical data loaded.")}>March</span>
-                <span className="text-[9.5px] text-zinc-400 font-bold cursor-pointer hover:text-zinc-650" onClick={() => triggerToast("April historical data loaded.")}>April</span>
-                <span className="text-[10px] text-zinc-900 dark:text-white font-extrabold bg-[#F0F0F3] dark:bg-zinc-800 px-4 py-1.2 rounded-full cursor-pointer shadow-neomorph-inset">May</span>
-                <span className="text-[9.5px] text-zinc-400 font-bold cursor-pointer hover:text-zinc-650" onClick={() => triggerToast("Planned June forecast loaded.")}>Planned</span>
+                <span className="text-[9.5px] text-zinc-400 font-bold cursor-pointer hover:text-zinc-650" onClick={() => triggerToast("Datos históricos de Marzo cargados.")}>Marzo</span>
+                <span className="text-[9.5px] text-zinc-400 font-bold cursor-pointer hover:text-zinc-650" onClick={() => triggerToast("Datos históricos de Abril cargados.")}>Abril</span>
+                <span className="text-[10px] text-zinc-900 dark:text-white font-extrabold bg-[#F0F0F3] dark:bg-zinc-800 px-4 py-1.2 rounded-full cursor-pointer shadow-neomorph-inset">Mayo</span>
+                <span className="text-[9.5px] text-zinc-400 font-bold cursor-pointer hover:text-zinc-650" onClick={() => triggerToast("Proyección de Junio cargada.")}>Planificado</span>
               </div>
 
               {/* High-Fidelity Donut Progress ring container */}
@@ -529,7 +529,7 @@ export function MyFinanceView({
                     
                     {/* Inner Center Text labels */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-2">
-                      <span className="text-[7px] text-zinc-400 uppercase tracking-widest font-black leading-none">Available to spend</span>
+                      <span className="text-[7px] text-zinc-400 uppercase tracking-widest font-black leading-none">Disponible para gastos</span>
                       <span className="font-mono text-[12px] font-black text-zinc-850 dark:text-zinc-100 mt-1 leading-none">69,950.00</span>
                       <span className="text-[7.5px] text-zinc-450 font-black tracking-wider mt-0.5">ALL</span>
                     </div>
@@ -540,30 +540,30 @@ export function MyFinanceView({
                     <div className="flex items-center gap-2">
                       <span className="h-1.8 w-1.8 rounded-full bg-[#10B981] border border-white" />
                       <div>
-                        <span className="text-[9px] text-zinc-400 font-extrabold block leading-none">Available</span>
+                        <span className="text-[9px] text-zinc-400 font-extrabold block leading-none">Disponible</span>
                         <span className="font-mono text-[10.5px] font-bold text-zinc-700 dark:text-zinc-300 block mt-0.5">115,000.00 ALL</span>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="h-1.8 w-1.8 rounded-full bg-[#FF4F3B] border border-white" />
                       <div>
-                        <span className="text-[9px] text-zinc-400 font-extrabold block leading-none">Spendings</span>
+                        <span className="text-[9px] text-zinc-400 font-extrabold block leading-none">Gastos</span>
                         <span className="font-mono text-[10.5px] font-bold text-zinc-700 dark:text-zinc-300 block mt-0.5">150,050.00 ALL</span>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="h-1.8 w-1.8 rounded-full bg-[#F59E0B] border border-white" />
                       <div>
-                        <span className="text-[9px] text-zinc-400 font-extrabold block leading-none">Planned</span>
+                        <span className="text-[9px] text-zinc-400 font-extrabold block leading-none">Planificado</span>
                         <span className="font-mono text-[10.5px] font-bold text-zinc-700 dark:text-zinc-300 block mt-0.5">13,366.89 ALL</span>
                       </div>
                     </div>
-                  </div>
+                    </div>
 
                 </div>
 
                 <div className="text-center w-full pt-3.5 border-t border-zinc-100 dark:border-zinc-800 mt-3.5">
-                  <span className="text-[8px] text-zinc-400 font-extrabold uppercase tracking-widest block leading-none">MY BUDGET 200,000.00 ALL</span>
+                  <span className="text-[8px] text-zinc-400 font-extrabold uppercase tracking-widest block leading-none">MI PRESUPUESTO 200,000.00 ALL</span>
                 </div>
               </div>
 
@@ -571,7 +571,7 @@ export function MyFinanceView({
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-white dark:bg-zinc-900 rounded-[22px] p-4 shadow-neomorph-light border border-white/60 dark:border-zinc-850 flex justify-between items-center">
                   <div>
-                    <span className="text-[8.5px] uppercase tracking-wider font-extrabold text-zinc-400 block leading-none">Income</span>
+                    <span className="text-[8.5px] uppercase tracking-wider font-extrabold text-zinc-400 block leading-none">Ingresos</span>
                     <h4 className="font-mono text-[11px] font-black text-zinc-905 dark:text-zinc-150 mt-2 block leading-none">250,000.00 ALL</h4>
                   </div>
                   <div className="h-6.5 w-6.5 bg-emerald-500/10 rounded-full flex items-center justify-center text-emerald-500 flex-shrink-0">
@@ -581,7 +581,7 @@ export function MyFinanceView({
 
                 <div className="bg-white dark:bg-zinc-900 rounded-[22px] p-4 shadow-neomorph-light border border-white/60 dark:border-zinc-850 flex justify-between items-center">
                   <div>
-                    <span className="text-[8.5px] uppercase tracking-wider font-extrabold text-zinc-400 block leading-none">Spendings</span>
+                    <span className="text-[8.5px] uppercase tracking-wider font-extrabold text-zinc-400 block leading-none">Gastos</span>
                     <h4 className="font-mono text-[11px] font-black text-zinc-905 dark:text-zinc-150 mt-2 block leading-none">150,050.00 ALL</h4>
                   </div>
                   <div className="h-6.5 w-6.5 bg-red-500/10 rounded-full flex items-center justify-center text-red-500 flex-shrink-0">
@@ -593,7 +593,7 @@ export function MyFinanceView({
               {/* Planned Spendings details list */}
               <div className="space-y-3">
                 <div className="flex justify-between items-baseline px-0.5">
-                  <span className="text-[10px] font-extrabold text-[#5c6880] uppercase tracking-widest block leading-none">Planned spendings</span>
+                  <span className="text-[10px] font-extrabold text-[#5c6880] uppercase tracking-widest block leading-none">Gastos planificados</span>
                   <span className="font-mono text-xs font-black text-zinc-800 dark:text-zinc-200">13,366.89 ALL</span>
                 </div>
 

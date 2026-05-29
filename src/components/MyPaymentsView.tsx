@@ -79,7 +79,7 @@ export function MyPaymentsView({
 
         {/* Big center title for Payments section inside red header */}
         <div className="relative z-10 text-center py-2.5">
-          <h2 className="text-lg font-black tracking-tight text-white font-sans leading-none">Payments & Transfers</h2>
+          <h2 className="text-lg font-black tracking-tight text-white font-sans leading-none">Pagos y Transferencias</h2>
           <p className="text-[8.5px] text-pink-100 font-sans mt-1.5 opacity-80 uppercase tracking-wider">Módulo de Retención y Dispersión Sindical</p>
         </div>
       </div>
@@ -96,7 +96,7 @@ export function MyPaymentsView({
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
               </svg>
             </div>
-            <span className="text-[9px] text-zinc-650 dark:text-zinc-300 font-extrabold font-sans">Transfer</span>
+            <span className="text-[9px] text-zinc-650 dark:text-zinc-300 font-extrabold font-sans">Transferir</span>
           </div>
 
           {/* Action 2 */}
@@ -106,7 +106,7 @@ export function MyPaymentsView({
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
               </svg>
             </div>
-            <span className="text-[9px] text-zinc-650 dark:text-zinc-300 font-extrabold font-sans">Payment</span>
+            <span className="text-[9px] text-zinc-650 dark:text-zinc-300 font-extrabold font-sans">Pagar</span>
           </div>
 
           {/* Action 3 */}
@@ -116,7 +116,7 @@ export function MyPaymentsView({
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
             </div>
-            <span className="text-[9px] text-zinc-650 dark:text-zinc-300 font-extrabold font-sans">Bills</span>
+            <span className="text-[9px] text-zinc-650 dark:text-zinc-300 font-extrabold font-sans">Facturas</span>
           </div>
 
           {/* Action 4 */}
@@ -126,7 +126,7 @@ export function MyPaymentsView({
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8M16 8h5V3" />
               </svg>
             </div>
-            <span className="text-[9px] text-zinc-650 dark:text-zinc-300 font-extrabold font-sans">Exchange</span>
+            <span className="text-[9px] text-zinc-650 dark:text-zinc-300 font-extrabold font-sans">Divisas</span>
           </div>
         </div>
 
@@ -139,7 +139,7 @@ export function MyPaymentsView({
             {scanning ? (
               <div className="flex items-center gap-2 text-rose-500 font-extrabold text-xs animate-pulse">
                 <Aperture className="h-5 w-5 animate-spin" />
-                <span>SCANNING CODE...</span>
+                <span>ESCANEANDO CÓDIGO...</span>
               </div>
             ) : (
               <>
@@ -148,7 +148,7 @@ export function MyPaymentsView({
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-16v.01M4 12H2m10 4v4m4-4h.01M4 4h4v4H4V4zm12 0h4v4h-4V4zM4 16h4v4H4v-4z" />
                   </svg>
                 </div>
-                <span className="text-[11.5px] text-[#FF2B54] font-black uppercase tracking-widest leading-none">Scan & Pay</span>
+                <span className="text-[11.5px] text-[#FF2B54] font-black uppercase tracking-widest leading-none">Escanear y Pagar</span>
               </>
             )}
           </button>
@@ -184,7 +184,7 @@ export function MyPaymentsView({
           >
             <div className="flex items-center gap-2.5">
               <span className="h-2 w-2 rounded-full bg-rose-500 animate-pulse" />
-              <span className="text-[12px] font-black text-zinc-850 dark:text-zinc-150">Payments for approval (2)</span>
+              <span className="text-[12px] font-black text-zinc-850 dark:text-zinc-150">Pagos por aprobar (2)</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-mono text-[12px] font-black text-rose-500">6,452.73 ALL</span>
@@ -206,7 +206,7 @@ export function MyPaymentsView({
                   </div>
                   <div>
                     <span className="font-extrabold text-zinc-850 dark:text-zinc-200 block leading-none">Agnes Cela</span>
-                    <span className="text-[8.5px] text-zinc-400 block tracking-tight mt-1">requests money • SutiApp</span>
+                    <span className="text-[8.5px] text-zinc-400 block tracking-tight mt-1">solicitó fondos • SutiApp</span>
                   </div>
                 </div>
                 <div className="text-right">
@@ -232,8 +232,8 @@ export function MyPaymentsView({
                     </svg>
                   </div>
                   <div>
-                    <span className="font-extrabold text-zinc-850 dark:text-zinc-200 block leading-none">New traffic fine</span>
-                    <span className="text-[8.5px] text-zinc-400 block tracking-tight mt-1">to pay for • Capi Hermosillo</span>
+                    <span className="font-extrabold text-zinc-850 dark:text-zinc-200 block leading-none">Nueva multa de tránsito</span>
+                    <span className="text-[8.5px] text-zinc-400 block tracking-tight mt-1">por pagar • Capi Hermosillo</span>
                   </div>
                 </div>
                 <div className="text-right">
@@ -263,7 +263,7 @@ export function MyPaymentsView({
               <Search className="h-4.5 w-4.5 text-zinc-400" />
               <input 
                 type="text" 
-                placeholder="Search beneficiary..." 
+                placeholder="Buscar beneficiario..." 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="flex-1 bg-transparent text-xs font-sans text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 outline-none border-none py-1"
@@ -279,7 +279,7 @@ export function MyPaymentsView({
               <div className="h-6 w-6 rounded-full bg-[#FF2B54]/10 text-[#FF2B54] flex items-center justify-center">
                 <span className="text-sm font-black">+</span>
               </div>
-              <span className="text-[11.5px] font-black uppercase tracking-wider">Add new beneficiary</span>
+              <span className="text-[11.5px] font-black uppercase tracking-wider">Agregar beneficiario</span>
             </div>
             <span className="text-[13px] text-zinc-400">→</span>
           </button>
@@ -287,7 +287,7 @@ export function MyPaymentsView({
 
         {/* Most frequent listed circle avatars with labels */}
         <div className="space-y-3 mt-6 text-left">
-          <h4 className="font-extrabold text-[11px] text-zinc-400 uppercase tracking-widest px-0.5">Most frequent</h4>
+          <h4 className="font-extrabold text-[11px] text-zinc-400 uppercase tracking-widest px-0.5">Más frecuentes</h4>
           
           <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-none select-none">
             {committeeMembers.map((c, idx) => (

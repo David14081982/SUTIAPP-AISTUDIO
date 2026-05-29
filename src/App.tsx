@@ -328,6 +328,7 @@ export default function App() {
                                   onOpenOverlay={(tab) => {
                                     setActiveMobileTab(tab);
                                   }}
+                                  onToggleAdmin={() => setViewMode('admin')}
                                 />
                               )}
                             </motion.div>
@@ -939,7 +940,7 @@ export default function App() {
                     <span className={`text-[7.5px] font-black font-sans mt-0.5 tracking-wider uppercase ${
                       activeMobileTab === 'inicio' && activeMobileSection === 'payments' ? 'text-[#FF2B54] font-black' : 'text-zinc-400 font-semibold'
                     }`}>
-                      Transfers
+                      Transferencias
                     </span>
                   </div>
 
@@ -959,7 +960,7 @@ export default function App() {
                       }`}
                     >
                       <Coins className="h-5 w-5" />
-                      <span className="text-[7.5px] uppercase font-black tracking-wider font-sans leading-none">My Finance</span>
+                      <span className="text-[7.5px] uppercase font-black tracking-wider font-sans leading-none">Finanzas</span>
                     </button>
 
                     {/* Right button: Products */}
@@ -978,7 +979,7 @@ export default function App() {
                       <svg className="h-5 w-5 stroke-current fill-none stroke-[2]" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                       </svg>
-                      <span className="text-[7.5px] uppercase font-black tracking-wider font-sans leading-none">Products</span>
+                      <span className="text-[7.5px] uppercase font-black tracking-wider font-sans leading-none">Servicios</span>
                     </button>
                   </div>
                 </div>

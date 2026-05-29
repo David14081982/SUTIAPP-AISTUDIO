@@ -27,6 +27,22 @@
   box-shadow: 6px 6px 18px #0c0c0e, -6px -6px 18px #1c1c24;
 }
 
+/* Profound Lift Interaction for Dashboard Cards */
+.shadow-neomorph-lift {
+  box-shadow: 8px 8px 20px #e6ebef, -8px -8px 20px #ffffff;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.shadow-neomorph-lift:hover {
+  box-shadow: 12px 18px 35px #cee0ee, -10px -10px 25px rgba(255, 255, 255, 0.95);
+}
+.dark .shadow-neomorph-lift {
+  box-shadow: 6px 6px 18px #0c0c0e, -6px -6px 18px #1c1c24;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.dark .shadow-neomorph-lift:hover {
+  box-shadow: 14px 22px 40px #040405, -8px -8px 24px #242432;
+}
+
 .shadow-neomorph-light {
   box-shadow: 4px 4px 12px rgba(166, 180, 200, 0.15), -4px -4px 12px rgba(255, 255, 255, 0.85);
 }
