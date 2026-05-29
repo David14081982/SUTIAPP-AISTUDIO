@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --font-mono: "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  
+  --color-red-650: #b91c1c;
+  --color-rose-950: #4c0519;
+  --color-zinc-850: #202024;
+}
+
+/* Custom visual utilities */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Elegant Neomorphism & Soft Shadows of the Luxury Fintech Mockups */
+.shadow-neomorph {
+  box-shadow: 8px 8px 20px #e6ebef, -8px -8px 20px #ffffff;
+}
+.dark .shadow-neomorph {
+  box-shadow: 6px 6px 18px #0c0c0e, -6px -6px 18px #1c1c24;
+}
+
+.shadow-neomorph-light {
+  box-shadow: 4px 4px 12px rgba(166, 180, 200, 0.15), -4px -4px 12px rgba(255, 255, 255, 0.85);
+}
+.dark .shadow-neomorph-light {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4), -4px -4px 12px rgba(255, 255, 255, 0.05);
+}
+
+.shadow-neomorph-button {
+  box-shadow: 5px 5px 12px #e0e6eb, -5px -5px 12px #ffffff;
+}
+.dark .shadow-neomorph-button {
+  box-shadow: 4px 4px 10px #0a0a0c, -4px -4px 10px #1a1a22;
+}
+
+.shadow-neomorph-inset {
+  box-shadow: inset 3px 3px 6px #e0e6eb, inset -3px -3px 6px #ffffff;
+}
+.dark .shadow-neomorph-inset {
+  box-shadow: inset 3px 3px 6px #0c0b0f, inset -3px -3px 6px #1a1924;
+}
+
+/* Glow effects matching the design specs */
+.glow-red {
+  box-shadow: 0 12px 24px rgba(255, 43, 84, 0.35);
+}
+.glow-red-sm {
+  box-shadow: 0 6px 14px rgba(255, 43, 84, 0.2);
+}
+.glow-indigo {
+  box-shadow: 0 12px 24px rgba(99, 102, 241, 0.2);
+}
+
+/* Backdrop micro-glare gloss */
+.glass-glow {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-neomorph {
+  background: rgba(240, 240, 243, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.dark .glass-neomorph {
+  background: rgba(18, 18, 22, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Global fintech high-readability typography base */
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark body {
+  background-color: #09090b;
+  color: #f4f4f5;
+}
+
+/* Swiss typography display headings: compact, tight tracking, crisp line-height */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+/* High-readability body text rules */
+p, span, li, label, input, select, textarea {
+  font-family: var(--font-sans);
+  letter-spacing: -0.015em;
+}
+
+/* Professional Fintech Numeral Alignment: Tabular Numbers */
+.font-mono, td, [class*="font-mono"] {
+  font-family: var(--font-mono) !important;
+  font-feature-settings: "tnum" 1, "lnum" 1; /* Tabular & Lining figures for tabular data alignment */
+  letter-spacing: -0.022em;
+}
+

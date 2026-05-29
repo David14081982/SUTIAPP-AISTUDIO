@@ -1,0 +1,6 @@
+{
+  "name": "SutiApp",
+  "description": "Plataforma digital y ecosistema fintech de servicios financieros, beneficios y convenios para afiliados del sindicato SUTISSSTESON.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
